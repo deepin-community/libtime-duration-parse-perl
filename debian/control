@@ -1,0 +1,26 @@
+Source: libtime-duration-parse-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: libtest-simple-perl <!nocheck>,
+                     libtime-duration-perl <!nocheck>,
+                     perl
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtime-duration-parse-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtime-duration-parse-perl.git
+Homepage: https://metacpan.org/release/Time-Duration-Parse
+Rules-Requires-Root: no
+
+Package: libtime-duration-parse-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libtime-duration-perl
+Description: module to parse a string that represents a time duration
+ Time::Duration::Parse is a module to parse human readable duration
+ strings like 2 minutes and 3 seconds to seconds.
+ .
+ parse_duration '6 Minutes and 3 seconds' == 363 ;

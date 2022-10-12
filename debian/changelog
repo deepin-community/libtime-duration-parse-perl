@@ -1,0 +1,128 @@
+libtime-duration-parse-perl (0.16-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * debian/copyright: replace tabs with spaces / remove trailing
+    whitespace.
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ intrigeri ]
+  * Import new upstream release.
+  * Drop obsolete build and runtime dependency on libexporter-lite-perl
+  * Declare dependency with policy 4.5.1
+  * Annotate test-only build-dependencies with <!nocheck>
+  * Bump debhelper-compat to 13
+  * Declare Rules-Requires-Root: no
+
+ -- intrigeri <intrigeri@debian.org>  Fri, 03 Sep 2021 08:55:11 +0000
+
+libtime-duration-parse-perl (0.15-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.15
+  * debian/upstream/metadata: update contact information
+  * Bump debhelper compatibility version to 12.
+  * Declare compatibility with Debian Policy 4.4.0.
+  * Make build-dependency on libtest-simple-perl (provided by perl) explicit.
+
+ -- intrigeri <intrigeri@debian.org>  Sun, 21 Jul 2019 17:55:15 +0000
+
+libtime-duration-parse-perl (0.14-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * Remove AGOSTINI Yves from Uploaders. Thanks for your work!
+
+  [ Alex Muntada ]
+  * Remove inactive pkg-perl members from Uploaders.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * Import upstream version 0.14.
+  * Add /me to Uploaders.
+  * Declare compliance with Debian Policy 4.1.5.
+  * Bump debhelper compatibility level to 10.
+  * Make short description a noun phrase.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 20 Jul 2018 21:15:59 +0200
+
+libtime-duration-parse-perl (0.13-1) unstable; urgency=medium
+
+  * Team upload.
+  * Import upstream version 0.13.
+  * Update debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 27 Oct 2015 20:57:05 +0100
+
+libtime-duration-parse-perl (0.12-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ Lucas Kanashiro ]
+  * Add debian/upstream/metadata
+  * Import upstream version 0.12
+  * Declare compliance with Debian policy 3.9.6
+  * Bump debhelper compatibility level to 9
+  * Add autopkgtest-pkg-perl
+
+ -- Lucas Kanashiro <kanashiro.duarte@gmail.com>  Fri, 14 Aug 2015 15:31:30 -0300
+
+libtime-duration-parse-perl (0.11-1) unstable; urgency=medium
+
+  [ Nathan Handler ]
+  * debian/watch: Modify to ignore development releases.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Daniel Lintott ]
+  * Imported Upstream version 0.11
+  * Remove patch no longer required
+    + pod-error.patch
+  * Convert to d/rules to short-format dh
+  * Convert to source format 3(quilt)
+  * Refresh debian/control with dh-make-perl
+  * Remove un-needed README.source
+  * Rewrite debian/copyright to copyright format 1
+  * Bump standards-version to 3.9.5
+  * Update upstream contact
+
+ -- Daniel Lintott <daniel@serverb.co.uk>  Wed, 09 Apr 2014 13:04:22 +0100
+
+libtime-duration-parse-perl (0.06-1) unstable; urgency=low
+
+  [ AGOSTINI Yves ]
+  * New upstream release
+
+  [ gregor herrmann ]
+  * Add patch pod-error.patch; adds a missing "=back" to the inline POD; add
+    quilt framework.
+
+ -- AGOSTINI Yves <agostini@univ-metz.fr>  Sun, 01 Jun 2008 21:11:47 +0200
+
+libtime-duration-parse-perl (0.05-1) unstable; urgency=low
+
+  * Initial Release (Closes: #476410)
+
+ -- AGOSTINI Yves <agostini@univ-metz.fr>  Wed, 16 Apr 2008 10:00:35 +0200
